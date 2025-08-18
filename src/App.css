@@ -1,0 +1,16 @@
+.box {
+  width: 80px;           /* Increase width */
+  height: 80px;          /* Increase height */
+  font-size: 32px;       /* Larger X or O */
+  margin: 2px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.board {
+  display: flex;
+  justify-content: center;
+}
