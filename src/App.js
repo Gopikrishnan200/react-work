@@ -7,12 +7,12 @@ import { Hell } from './componenets/newtry';
 function App(){
   return(
     <>
-    <Hello color="yellow" user="gopi"/>
+    <Hello color="yellow" />
     <hr/>
     <hr/>
     <hr/>
     <hr/>
-    
+
     < Hell />
     </>
   )

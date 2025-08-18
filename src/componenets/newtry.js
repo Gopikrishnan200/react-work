@@ -7,7 +7,7 @@ function Core({value}) {
          padding: "10px",
          fontFamily: "Sans-Serif",
          position: "relative",
-         left: "200px"
+         left: "20px"
     
 
 }
@@ -27,7 +27,7 @@ function Core({value}) {
     }
 
     return(<>
-    <h2>I am Gopi and I am {color}</h2>
+    <h2>The Car is {color}</h2>
      <button onClick={Hanger} style={ mystyle } >{value}</button>
     
     </>)

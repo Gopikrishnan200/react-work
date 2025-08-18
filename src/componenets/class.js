@@ -5,7 +5,7 @@ const mystle={
          padding: "10px",
          fontFamily: "Sans-Serif",
          position: "relative",
-         left: "200px"
+         left: "20px"
     
 
 }
@@ -40,9 +40,9 @@ class Hello extends Component{
     
     render(){
         return (<>
-           <h1>Hi am {this.props.color} and i am {this.props.user}</h1>
+           <h1>Hi i am mango my color is  {this.props.color}</h1>
            
-           <h1>i am {this.state.model}From {this.state.color} </h1>
+           <h1>i am {this.state.model}  From {this.state.color} </h1>
            <button onClick={this.Handle} style={ mystle }>click change</button>
            <Gopi />
         </>)
