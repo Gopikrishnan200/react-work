@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./cs.css"
 
+
+const imge={
+    width: "300px",
+    height: "200px",
+    border: "2px solid black",
+    borderRadius: '70%',  
+}
+
 export default function Application (){
     const [userName, setuserName]=useState("");
     const [userEmail, setuserEmail]=useState("");
@@ -20,7 +28,7 @@ export default function Application (){
         
            
                 if(userName === "demo" && userEmail === "demo@gmail.com"){
-                    setloginresult("u r successfully login")
+                    setloginresult("You successfully login")
                     console.log(userName)
                     console.log(userEmail)
                 }
@@ -31,6 +39,12 @@ export default function Application (){
 
     return(
         <form action="" onSubmit={handler}>
+            <img style={imge}
+          src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80" 
+          alt="Login Visual" 
+        />
+
+
             <input type="text" value={userName} 
             onChange={(e)=> setuserName(e.target.value)}/>
             <br/>
