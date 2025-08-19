@@ -4,16 +4,20 @@ import "./cs.css"
 
 const imge={
     width: "300px",
-    height: "200px",
+    height: "260px",
     border: "2px solid black",
     borderRadius: '70%',  
 }
 
 export default function Application (){
     const [userName, setuserName]=useState("");
-    const [userEmail, setuserEmail]=useState("");
-    
+    const [userEmail, setuserEmail]=useState("");    
     const [loginresult,setloginresult]=useState("");
+
+    const usernamess =["gopi","arch",'l3'];
+    const email =["demo@gamil.com",'gopi@gmail.com',"gopik@gamil.com"]
+
+    
 
     useEffect(() => {
         const storedUser = localStorage.getItem("username");
@@ -27,8 +31,8 @@ export default function Application (){
           e.preventDefault();
         
            
-                if(userName === "demo" && userEmail === "demo@gmail.com"){
-                    setloginresult("You successfully login")
+                if(usernamess.includes(userName) && email.includes(userEmail)){
+                    setloginresult(" ✅ You successfully login")
                     console.log(userName)
                     console.log(userEmail)
                 }
@@ -39,6 +43,7 @@ export default function Application (){
 
     return(
         <form action="" onSubmit={handler}>
+            <h2 className="login">🔐 Login Form</h2>
             <img style={imge}
           src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80" 
           alt="Login Visual" 
