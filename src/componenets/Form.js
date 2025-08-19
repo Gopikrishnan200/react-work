@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./cs.css"
 
 export default function Application (){
     const [userName, setuserName]=useState("");
@@ -42,15 +42,15 @@ export default function Application (){
             
                  
 
-            <input type="submit" value="submit" ></input>
+            <input type="submit" value="submit" className="submit" ></input>
 
 
             
 
-                 <h6>This is your userName : {userName}</h6>
-                <h6>This is your userEmail : {userEmail}</h6>
+                 <h6> This is your userName : <strong>{userName}</strong></h6>
+                <h6>This is your userEmail :<strong> {userEmail}</strong></h6>
                  
-                 <h5>Result : {loginresult}</h5>
+                 <h5>Result : <strong> {loginresult} </strong></h5>
             
 
             

@@ -10,6 +10,8 @@ const mystle={
 
 }
 
+
+
 class Gopi extends Component{
     render(){
         return(<>
@@ -43,11 +45,12 @@ class Hello extends Component{
     
     render(){
         return (<>
+        
            <h1>Hi i am mango my color is  {this.props.color}</h1>
            
            <h1>i am {this.state.model}  From {this.state.color} </h1>
-           <button onClick={this.Handle} style={ mystle }>click change</button>
-           <Gopi />
+           <button onClick={this.Handle} style={ mystle }>click change Color</button>
+           
         </>)
     }
 }
