@@ -30,7 +30,10 @@ class Hello extends Component{
        if(this.state.color ==="red"){
         this.setState({color:"orange"})
 
-       }else{
+
+       }
+       
+       else{
         this.setState({color:"red"})
        }
         
